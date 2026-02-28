@@ -1,0 +1,98 @@
+# Flight Tracker - Requirements
+
+## System Requirements
+
+### Node.js
+- Version: 20.x or higher
+- Download: https://nodejs.org/
+
+### Package Manager (choose one)
+- npm (comes with Node.js)
+- yarn 1.22.x or higher
+- pnpm 8.x or higher
+- bun 1.x or higher
+
+## Dependencies
+
+### Production Dependencies
+next@16.1.6                 # React framework for production
+react@19.2.3                # React library
+react-dom@19.2.3            # React DOM renderer
+
+### Development Dependencies
+@tailwindcss/postcss@^4     # TailwindCSS PostCSS plugin
+@types/node@^20             # TypeScript definitions for Node.js
+@types/react@^19            # TypeScript definitions for React
+@types/react-dom@^19        # TypeScript definitions for React DOM
+babel-plugin-react-compiler@1.0.0  # React compiler plugin
+eslint@^9                   # JavaScript/TypeScript linter
+eslint-config-next@16.1.6   # ESLint configuration for Next.js
+tailwindcss@^4              # Utility-first CSS framework
+typescript@^5               # TypeScript language
+
+## Installation Commands
+
+### Using npm
+```bash
+npm install
+```
+
+### Using yarn
+```bash
+yarn install
+```
+
+### Using pnpm
+```bash
+pnpm install
+```
+
+### Using bun
+```bash
+bun install
+```
+
+## Environment Setup
+
+### Optional Environment Variables
+Create a `.env.local` file in the root directory for custom configuration:
+
+```env
+# API Configuration (if using real flight API)
+NEXT_PUBLIC_FLIGHT_API_KEY=your_api_key_here
+NEXT_PUBLIC_FLIGHT_API_URL=https://api.example.com
+
+# Development
+NODE_ENV=development
+```
+
+## Browser Support
+
+### Recommended Browsers
+- Chrome/Edge (latest 2 versions)
+- Firefox (latest 2 versions)
+- Safari (latest 2 versions)
+
+### Minimum Browser Versions
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
+
+## Development Tools (Optional but Recommended)
+
+- VS Code or similar IDE
+- Git for version control
+- Chrome DevTools or similar browser developer tools
+
+## Port Requirements
+
+- Default development port: 3000
+- Ensure port 3000 is available or configure a different port
+
+## Notes
+
+- All dependencies are managed through package.json
+- Run `npm install` or equivalent to install all required packages
+- For production deployment, run `npm run build` first
+- This project uses the Next.js App Router (not Pages Router)
